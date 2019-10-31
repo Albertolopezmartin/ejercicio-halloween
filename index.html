@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scary Halloween Party</title>
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
+    <!--this document is NOT RESPONSIVE can only be seen in a computer monitor-->
+    <link href="estilos/halloween.css" rel="stylesheet">
+    <link href="skull.ico" rel="icon">
+    <script src="javascritp/halloween.js"></script>
+</head>
+<body>
+        <audio id="trumpet">
+                <source src="sonidos/skullsound2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="mansion">
+            <source src="sonidos/mysticmansion.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="laugh">
+            <source src="sonidos/Dark_Laugh.mp3" type="audio/mpeg">
+        </audio>
+    <div id="wrapper">
+    <h1>Scary Halloween Party</h1>
+    <p id="p1">Are you ready to meet with the darkness?.</p>
+    <p id="p2">The crows carry with them a secret.</p>
+    <div id="crows" onclick="mostrar('p3')"></div>
+    <p id="p3">The cat will reveal more details to you if you dare to pet it.</p>
+    <div id="cat" onclick="mostrar('p4');mostrar('p5');mostrar('p6');mostrar('p7');sonar('mansion')" ondblclick="ocultar('p5');pausar('mansion')"></div>
+    <p id="p4">The meeting will occur at 9pm tonight on the abandoned mansion.</p>
+    <p id="p5">If you wish to quell the sounds of the damned pet me two more times.</p>
+    <div id="cross" onclick="mostrar('doot');sonar('trumpet')"></div> <!--para definir un area activable-->
+    <p id="p6">Don't touch the red cross!!</p>
+    <img id="doot" src="imagenes/doot.gif" ondblclick="ocultar('doot');pausar('trumpet')">
+    <p id="p7">The bats wish to be left alone</p>
+    <div id="bat" onclick="mostrar('ghost');sonar('laugh')"></div>
+    <img id="ghost" src="imagenes/ghost.gif" ondblclick="ocultar('ghost')">
+
+    </div>
+</body>
+</html>
